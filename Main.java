@@ -1,14 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        PersonBuilder builder = new PersonBuilder("Paolo","Lupo");
+        PersonBuilder builder1 = new PersonBuilder("Paolo", "Lupo");
 
-        builder.setAge(22);
-        builder.setAddress("Via Milano 22");
-        Person person1=builder.build();
+        builder1.setAge(22);
+        builder1.setAddress("Via Milano 22");
+        Person person1 = builder1.build();
         System.out.println(person1);
 
-        builder = new PersonBuilder("Luca","Paglia");
-        Person person2=builder.build();
+        PersonBuilder builder2 = new PersonBuilder("Luca", "Paglia");
+        Person person2 = builder2.build();
         System.out.println(person2);
     }
 }
